@@ -2,6 +2,7 @@ let d, hours, minutes, seconds;
 let hoursContainer = document.getElementById('hours');
 let minutesContainer = document.getElementById('minutes');
 let secondsContainer = document.getElementById('seconds');
+let timeContainer = document.getElementById('time');
 let dateContainer = document.getElementById('date');
 let dayContainer = document.getElementById('day');
 let months = ["Jaanuar", "Veebruar", "Märts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"];
@@ -76,3 +77,11 @@ upDateClock();
 upDateDate();
 
 setInterval(upDateClock, 1000);
+
+time.addEventListener("mousedown", () => {
+    const xPosition = Math.floor(Math.random() * 20);
+    const yPosition = Math.floor(Math.random() * 40);
+  
+    time.style.marginTop = `${xPosition}%`;
+    time.style.marginLeft = `${yPosition}%`;
+  });

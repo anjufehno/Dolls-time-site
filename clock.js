@@ -81,7 +81,11 @@ setInterval(upDateClock, 1000);
 time.addEventListener("mousedown", () => {
     const xPosition = Math.floor(Math.random() * 20);
     const yPosition = Math.floor(Math.random() * 40);
+    const zPosition = Math.floor(Math.random() * 30);
+    const iPosition = Math.floor(Math.random() * 10);
   
     time.style.marginTop = `${xPosition}%`;
-    time.style.marginLeft = `${yPosition}%`;
+    time.style.marginRight = `${yPosition}%`;
+    time.style.marginLeft = `${zPosition}%`;
+    time.style.marginBotttom = `${iPosition}%`;
   });
